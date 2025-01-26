@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f05421;
+    color: white;
+}
+
+header {
+    background-color: #d12f1e;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.collapsible {
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 0 auto 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.collapsible:hover {
+    background-color: #ff6e00;
+}
+
+.content {
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f8efe3;
+    color: #333;
+    margin: 0 auto 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    text-align: center;
+}
+
+.content h2 {
+    color: #d12f1e;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.content p {
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Ensure content aligns properly on larger screens */
+@media (min-width: 768px) {
+    .collapsible {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+}
